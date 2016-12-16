@@ -4,12 +4,12 @@ var express = require('express');
 var app = express();
 
 var PORT = process.env.PORT || 3000;
-//req.headers['x-forwarded-proto'] === 'http'
+//
 app.use(function (req, res, next){
-  if (!req.secure) {
-    next();
+  if (req.headers['x-forwarded-proto'] === 'http') {
+        res.redirect('http://' + req.hostname + req.url);
   } else {
-    res.redirect('http://' + req.hostname + req.url);
+    next();
   }
 });
 
