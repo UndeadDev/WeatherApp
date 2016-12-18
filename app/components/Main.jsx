@@ -6,7 +6,7 @@ var Weather = require('Weather');
 var Main = (props) => {
     return (
         <div>
-            <Nav></Nav>
+            <Nav/>
             <h2>Main</h2>
             {props.children}
         </div>
