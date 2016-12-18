@@ -16,7 +16,7 @@ this.props.onSearch(location);
         return(<div>
             <form onSubmit={this.OnFormSubmit}>
             <input type="text" ref="location" placeholder="Enter City Name"/>
-            <button>Get Weather</button>
+            <button className="button">Get Weather</button>
             </form>
             </div>
         );

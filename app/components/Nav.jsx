@@ -9,11 +9,15 @@ var Nav = () => {
                 <ul className="menu">
                     <li className="menu-text">React Weather App</li>
                     <li> <IndexLink to="/" activeclassName="active" activeStyle={{ fontWeight: 'bold' }}>GetWeather</IndexLink> </li>
-            <li><Link to="/About" activeclassName="active" activeStyle={{ fontWeight: 'bold' }}>About</Link></li>
-            <li><Link to="/Examples" activeclassName="active" activeStyle={{ fontWeight: 'bold' }}>Examples</Link></li>
+                    <li><Link to="/About" activeclassName="active" activeStyle={{ fontWeight: 'bold' }}>About</Link></li>
+                    <li><Link to="/Examples" activeclassName="active" activeStyle={{ fontWeight: 'bold' }}>Examples</Link></li>
                 </ul>
             </div>
             <div className="top-bar-right">
+                <ul className="menu">
+                    <li><input type="search" placeholder="Search"></input></li>
+                    <li><button type="button" className="button">Search</button></li>
+                </ul>
             </div>
         </div>
 
@@ -22,11 +26,3 @@ var Nav = () => {
 
 
 module.exports = Nav;
-var old = (
-    <div>
-        <ul className="menu align-right">
-            <li className="menu-text">React Weather App</li>
-            
-        </ul>
-    </div>
-)
